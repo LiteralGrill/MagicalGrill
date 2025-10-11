@@ -1,5 +1,5 @@
 document.write('<center>');
-document.write('<p><img src="/DoYouLikeKissingGrills.png" width="75%" height="75%" alt=""></p>'); 
+document.write('<p><img src="/MagicalGrill.png" width="75%" height="75%" alt=""></p>'); 
 document.write('<p><img src="/tape.png" width="120" height="10" alt=""></p>'); 
 document.write('<font size="+1"><b><i>Find Me On</i></b></font>'); 
 document.write('<br>'); 
