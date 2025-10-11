@@ -149,3 +149,39 @@ a:focus {
         flex-direction: column;
     }
 }
+
+.floss-divider {
+    width: 100%;
+    height: 12px;
+    background-image: repeating-linear-gradient(
+        to right,
+        transparent 0,
+        transparent 6px,
+        #FFFFFF 6px,
+        #FFFFFF 10px,
+        transparent 10px,
+        transparent 16px
+    );
+    background-color: transparent;
+    margin: 40px 0;
+    border: none;
+    position: relative;
+}
+
+/* optional shimmer animation for magical-girl sparkle */
+.floss-divider::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,193,240,0.6), transparent);
+    animation: flossShimmer 3s linear infinite;
+    opacity: 0.4;
+}
+
+@keyframes flossShimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
