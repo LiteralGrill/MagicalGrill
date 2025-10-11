@@ -149,21 +149,3 @@ a:focus {
         flex-direction: column;
     }
 }
-
-.floss-divider {
-    width: 100%;
-    height: 12px;
-    background-image: repeating-linear-gradient(
-        to right,
-        transparent 0,
-        transparent 6px,
-        #FFFFFF 6px,
-        #FFFFFF 10px,
-        transparent 10px,
-        transparent 16px
-    );
-    background-color: transparent;
-    margin: 40px 0;
-    border: none;
-    position: relative;
-}
