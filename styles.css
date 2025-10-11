@@ -25,19 +25,26 @@ body {
 
 /* --- Links --- */
 a {
-    color: #FF4FD8;
+    color: #FFC1F0; /* light bubblegum pink */
     text-decoration: none;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:visited {
-    color: #E040C2;
+    color: #FFAAE8; /* slightly darker for visited links */
 }
 
 a:hover, a:active {
-    color: #FFFFFF;
-    text-shadow: 0 0 8px #FF4FD8;
+    color: #FFFFFF; /* clean white hover */
+    text-shadow: 0 0 10px #FFC1F0; /* soft glow that matches bubblegum pink */
 }
+
+/* --- Focus (keyboard navigation) --- */
+a:focus {
+    outline: 3px dashed #FFC1F0;
+    outline-offset: 3px;
+}
+
 
 /* --- Main container --- */
 .container {
