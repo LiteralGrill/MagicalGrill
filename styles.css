@@ -42,5 +42,104 @@ a:hover, a:active {
 /* --- Main container --- */
 .container {
     width: 1000px;
-    margi
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 25px rgba(255, 79, 216, 0.4);
+}
 
+/* --- Sub-sections --- */
+.header, .footer, .content, .sidebar {
+    background-color: rgba(255, 182, 233, 0.15);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+/* --- Sidebar --- */
+.sidebar {
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 20px 0 0 0;
+    padding: 15px;
+}
+
+/* --- Main content --- */
+.content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 18px;
+}
+
+/* --- Images --- */
+img {
+    border: none !important;
+    outline: none !important;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(255, 79, 216, 0.3);
+}
+
+/* --- Layout helpers --- */
+.clearfix {
+    display: flex;
+    gap: 10px;
+}
+
+/* --- Accessibility and focus --- */
+a:focus {
+    outline: 3px dashed #FFFFFF;
+    outline-offset: 3px;
+}
+
+/* --- Skip link --- */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #FFFFFF;
+    color: #000;
+    padding: 8px;
+    z-index: 100;
+    border-radius: 5px;
+    border: 3px dashed #FFFFFF;
+}
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .clearfix {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .clearfix {
+        flex-direction: column;
+    }
+}
