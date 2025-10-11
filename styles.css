@@ -1,10 +1,6 @@
 body {
     background-image: url('/punkbg.png');
     background-color: #FFB7E5; /* soft bubblegum pink fallback */
-    background-size: cover;
-    background-repeat: repeat;
-    background-position: center;
-    background-attachment: scroll; /* scrolls with content */
     color: #FFFFFF;
     font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
 }
