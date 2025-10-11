@@ -1,9 +1,10 @@
 body {
     background-image: url('/punkbg.png');
     background-color: #FFB7E5; /* soft bubblegum pink fallback */
-    background-repeat: no-repeat;
-    background-size: contain; /* fits the entire image */
-    background-position: center center;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    background-attachment: scroll; /* scrolls with content */
     color: #FFFFFF;
     font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
 }
@@ -24,30 +25,23 @@ body {
 
 /* --- Links --- */
 a {
-    color: #FFC1F0; /* light bubblegum pink */
+    color: #FF4FD8;
     text-decoration: none;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:visited {
-    color: #FFAAE8; /* slightly darker for visited links */
+    color: #E040C2;
 }
 
 a:hover, a:active {
-    color: #FFFFFF; /* clean white hover */
-    text-shadow: 0 0 10px #FFC1F0; /* soft glow that matches bubblegum pink */
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #FF4FD8;
 }
-
-/* --- Focus (keyboard navigation) --- */
-a:focus {
-    outline: 3px dashed #FFC1F0;
-    outline-offset: 3px;
-}
-
 
 /* --- Main container --- */
 .container {
-    width: 1200px;
+    width: 1000px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
@@ -84,7 +78,7 @@ img {
     border: none !important;
     outline: none !important;
     border-radius: 0;
-    box-shadow: 0 0 0px rgba(255, 79, 216, 0.3);
+    box-shadow: 0 0 10px rgba(255, 79, 216, 0.3);
 }
 
 /* --- Layout helpers --- */
@@ -149,3 +143,4 @@ a:focus {
         flex-direction: column;
     }
 }
+
