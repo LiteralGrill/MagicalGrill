@@ -35,10 +35,9 @@ a:hover, a:active {
     text-shadow: 0 0 10px #FFC1F0; /* soft glow that matches bubblegum pink */
 }
 
-/* --- Focus (keyboard navigation) --- */
-a:focus {
-    outline: 3px dashed #FFC1F0;
-    outline-offset: 3px;
+//* Only remove focus outline on mouse click, keep it for keyboard */
+:focus:not(:focus-visible) {
+    outline: none;
 }
 
 
