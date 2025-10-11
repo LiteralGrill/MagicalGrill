@@ -1,6 +1,6 @@
 document.write('<center>');
 document.write('<p><img src="/MagicalGrill.png" width="75%" height="75%" alt=""></p>'); 
-document.write('<p><img src="/xstitch.png" width="120" height="10" alt=""></p>'); 
+document.write('<p><img src="/stitch.png" width="120" height="10" alt=""></p>'); 
 document.write('<font size="+1"><b><i>Find Me On</i></b></font>'); 
 document.write('<br>'); 
 document.write('<br>'); 
@@ -109,7 +109,7 @@ document.write('</a>');
 document.write('<a href="http://www.live-evil.org/">');
 document.write('<img src="/liveevil.png" alt="Live Evil">'); 
 document.write('</a>'); 
-document.write('<p><img src="/xstitch.png" width="120" height="10" alt=""></p>'); 
+document.write('<p><img src="/stitch.png" width="120" height="10" alt=""></p>'); 
 document.write(''); 
 document.write(''); 
 document.write(''); 
