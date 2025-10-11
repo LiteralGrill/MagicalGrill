@@ -1,92 +1,101 @@
 body {
-    background-image: url('/dryp-pinksmokeseamless-JPG.jpg');
-    background-color: #0A0A0A; /* Deep black base for dark mode */
-    color: #F8EAFD; /* Soft off-white with a slight pink tint */
+    background-image: url('/punkbg.png');
+    background-color: #FFB7E5; /* soft bubblegum pink fallback */
+    color: #FFFFFF; /* clean white text */
     font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
 }
 
+/* --- Links --- */
 a {
-    color: #FF00A8; /* Neon magenta for links */
+    color: #FF4FD8; /* vivid magical pink */
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:visited {
-    color: #E50095; /* Slightly darker magenta */
+    color: #E040C2; /* darker pink for visited links */
 }
 
 a:hover, a:active {
-    color: #FFD400; /* Bright yellow pop (matches caution stripes) */
-    text-decoration: underline;
+    color: #FFFFFF;
+    text-shadow: 0 0 8px #FF4FD8; /* glowy effect */
 }
 
+/* --- Main container --- */
 .container {
     width: 1000px;
     margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.8); /* Subtle transparency */
+    background-color: rgba(0, 0, 0, 0.6); /* translucent black to match patches */
     padding: 20px;
-    border-radius: 15px;
-    border: 2px solid #FF00A8; /* Neon pink accent border */
+    border-radius: 20px;
+    border: 2px dashed #FFFFFF; /* white "stitched" border look */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0 0 20px rgba(255, 0, 170, 0.4);
+    box-shadow: 0 0 25px rgba(255, 79, 216, 0.4);
 }
 
+/* --- Sub-sections --- */
 .header, .footer, .content, .sidebar {
-    background-color: rgba(255, 20, 147, 0.1); /* Faint pink glass effect */
-    border-radius: 10px;
-    padding: 10px;
+    background-color: rgba(255, 182, 233, 0.15); /* faint pink glass effect */
+    border-radius: 15px;
+    padding: 12px;
     margin-bottom: 10px;
-    border: 1px solid rgba(255, 20, 147, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* --- Sidebar --- */
 .sidebar {
-    width: 130px;
-    background-color: rgba(255, 255, 0, 0.1); /* Subtle yellow tint */
-    border-left: 3px solid #FFD400; /* Matches hazard stripes */
-    border-radius: 15px 0 0 0px;
-    padding: 10px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.7); /* deeper patch tone */
+    border-left: 4px dashed #FFFFFF; /* stitched effect */
+    border-radius: 20px 0 0 0;
+    padding: 15px;
 }
 
+/* --- Main content --- */
 .content {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
-    border-left: 0px solid #FF00A8;
+    padding: 18px;
+    border-left: 0;
 }
 
+/* --- Images --- */
 img {
     border: none !important;
     outline: none !important;
-    border-radius: 0px;
-    box-shadow: 0 0 0px rgba(255, 0, 170, 0.3);
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(255, 79, 216, 0.3);
 }
 
+/* --- Layout helpers --- */
 .clearfix {
     display: flex;
+    gap: 10px;
 }
 
-/* Accessibility and focus */
+/* --- Accessibility and focus --- */
 a:focus {
-    outline: 2px solid #FFD400;
+    outline: 2px dashed #FFFFFF;
+    outline-offset: 3px;
 }
 
+/* --- Skip link --- */
 .skip-to-content {
     position: absolute;
     top: -40px;
     left: 0;
-    background: #FFD400;
+    background: #FFFFFF;
     color: #000;
     padding: 8px;
     z-index: 100;
     border-radius: 5px;
 }
-
 .skip-to-content:focus {
     top: 0;
 }
 
-/* Responsive Design */
+/* --- Responsive adjustments --- */
 @media (max-width: 768px) {
     .container {
         width: 90%;
