@@ -1,6 +1,6 @@
 document.write('<center>'); 
 document.write('<img src="/tape.png" width="100%" height="5%" alt="">'); 
-document.write('<h1><u><i>Caution: Hot Grill</i></u></h1>'); 
+document.write('<h1><u><i>Magical Grill</i></u></h1>'); 
 document.write('<nav>'); 
 document.write('<h2>');
 document.write('&#9733 <a href="/index.html">Home</a> &#9733; '); 
