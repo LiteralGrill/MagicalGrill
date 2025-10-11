@@ -4,133 +4,43 @@ body {
     background-size: cover;
     background-repeat: repeat;
     background-position: center;
-    background-attachment: scroll; /* ✅ scrolls with the page */
-    color: #FFFFFF; /* clean white text */
+    background-attachment: scroll; /* scrolls with content */
+    color: #FFFFFF;
     font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
 }
 
+/* --- Unified stitched border style --- */
+* {
+    box-sizing: border-box;
+}
+
+.container,
+.header,
+.footer,
+.content,
+.sidebar {
+    border: 3px dashed #FFFFFF; /* consistent “stitched floss” border */
+    border-radius: 20px;
+}
 
 /* --- Links --- */
 a {
-    color: #FF4FD8; /* vivid magical pink */
+    color: #FF4FD8;
     text-decoration: none;
     transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 a:visited {
-    color: #E040C2; /* darker pink for visited links */
+    color: #E040C2;
 }
 
 a:hover, a:active {
     color: #FFFFFF;
-    text-shadow: 0 0 8px #FF4FD8; /* glowy effect */
+    text-shadow: 0 0 8px #FF4FD8;
 }
 
 /* --- Main container --- */
 .container {
     width: 1000px;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.6); /* translucent black to match patches */
-    padding: 20px;
-    border-radius: 20px;
-    border: 2px dashed #FFFFFF; /* white "stitched" border look */
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    box-shadow: 0 0 25px rgba(255, 79, 216, 0.4);
-}
+    margi
 
-/* --- Sub-sections --- */
-.header, .footer, .content, .sidebar {
-    background-color: rgba(255, 182, 233, 0.15); /* faint pink glass effect */
-    border-radius: 15px;
-    padding: 12px;
-    margin-bottom: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* --- Sidebar --- */
-.sidebar {
-    width: 150px;
-    background-color: rgba(0, 0, 0, 0.7); /* deeper patch tone */
-    border-left: 4px dashed #FFFFFF; /* stitched effect */
-    border-radius: 20px 0 0 0;
-    padding: 15px;
-}
-
-/* --- Main content --- */
-.content {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 18px;
-    border-left: 0;
-}
-
-/* --- Images --- */
-img {
-    border: none !important;
-    outline: none !important;
-    border-radius: 0;
-    box-shadow: 0 0 10px rgba(255, 79, 216, 0.3);
-}
-
-/* --- Layout helpers --- */
-.clearfix {
-    display: flex;
-    gap: 10px;
-}
-
-/* --- Accessibility and focus --- */
-a:focus {
-    outline: 2px dashed #FFFFFF;
-    outline-offset: 3px;
-}
-
-/* --- Skip link --- */
-.skip-to-content {
-    position: absolute;
-    top: -40px;
-    left: 0;
-    background: #FFFFFF;
-    color: #000;
-    padding: 8px;
-    z-index: 100;
-    border-radius: 5px;
-}
-.skip-to-content:focus {
-    top: 0;
-}
-
-/* --- Responsive adjustments --- */
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    .sidebar {
-        width: 100%;
-        margin-bottom: 10px;
-        border-radius: 10px;
-    }
-
-    .clearfix {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 576px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .sidebar {
-        width: 100%;
-        margin-bottom: 10px;
-        border-radius: 10px;
-    }
-
-    .clearfix {
-        flex-direction: column;
-    }
-}
