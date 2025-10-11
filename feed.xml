@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="https://nsfw.literalgrill.com/feed.xml" rel="self" type="application/rss+xml" />
+    <title>Caution: Hot Grill</title>
+    <link>https://nsfw.literalgrill.com/</link>
+    <description>Inspired by late 90s and early 2000s fansites of yore, The GrillOut is a place you can expect essays, reviews, and general musings with a focus on anime, cartoons, and generally obscure media.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Oct 2025 12:00:00 -0800</lastBuildDate>
+
+    <item>
+      <title>Ecchi &amp; Hentai Spring 2025 Anime Guide</title>
+      <pubDate>Sun, 13 Apr 2025 12:00:00 -0800</pubDate>
+      <link>https://literalgrill.com/anime_posts/ecchi_hentai_spring_2025_anime_guide</link>
+      <guid>https://literalgrill.com/anime_posts/ecchi_hentai_spring_2025_anime_guide</guid>
+      <description>Get early impressions on the lewder anime releases of the Spring 2025 season from a certified hentai master!</description>
+    </item>
+
+  </channel>
+</rss>

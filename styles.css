@@ -1,0 +1,122 @@
+body {
+    background-image: url('/dryp-pinksmokeseamless-JPG.jpg');
+    background-color: #0A0A0A; /* Deep black base for dark mode */
+    color: #F8EAFD; /* Soft off-white with a slight pink tint */
+    font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
+}
+
+a {
+    color: #FF00A8; /* Neon magenta for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:visited {
+    color: #E50095; /* Slightly darker magenta */
+}
+
+a:hover, a:active {
+    color: #FFD400; /* Bright yellow pop (matches caution stripes) */
+    text-decoration: underline;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.8); /* Subtle transparency */
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #FF00A8; /* Neon pink accent border */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 20px rgba(255, 0, 170, 0.4);
+}
+
+.header, .footer, .content, .sidebar {
+    background-color: rgba(255, 20, 147, 0.1); /* Faint pink glass effect */
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 20, 147, 0.3);
+}
+
+.sidebar {
+    width: 130px;
+    background-color: rgba(255, 255, 0, 0.1); /* Subtle yellow tint */
+    border-left: 3px solid #FFD400; /* Matches hazard stripes */
+    border-radius: 15px 0 0 0px;
+    padding: 10px;
+}
+
+.content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-left: 0px solid #FF00A8;
+}
+
+img {
+    border: none !important;
+    outline: none !important;
+    border-radius: 0px;
+    box-shadow: 0 0 0px rgba(255, 0, 170, 0.3);
+}
+
+.clearfix {
+    display: flex;
+}
+
+/* Accessibility and focus */
+a:focus {
+    outline: 2px solid #FFD400;
+}
+
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #FFD400;
+    color: #000;
+    padding: 8px;
+    z-index: 100;
+    border-radius: 5px;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .clearfix {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    .clearfix {
+        flex-direction: column;
+    }
+}
