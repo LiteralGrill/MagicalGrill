@@ -78,7 +78,7 @@ img {
     border: none !important;
     outline: none !important;
     border-radius: 0;
-    box-shadow: 0 0 10px rgba(255, 79, 216, 0.3);
+    box-shadow: 0 0 0px rgba(255, 79, 216, 0.3);
 }
 
 /* --- Layout helpers --- */
