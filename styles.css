@@ -35,11 +35,17 @@ a:hover, a:active {
     text-shadow: 0 0 10px #FFC1F0; /* soft glow that matches bubblegum pink */
 }
 
-//* Only remove focus outline on mouse click, keep it for keyboard */
+/* --- Focus: keyboard-friendly only --- */
 :focus:not(:focus-visible) {
     outline: none;
+    box-shadow: none;
 }
 
+a:focus-visible,
+button:focus-visible {
+    outline: 3px dashed #FFFFFF;
+    outline-offset: 3px;
+}
 
 /* --- Main container --- */
 .container {
@@ -89,12 +95,6 @@ img {
     gap: 10px;
 }
 
-/* --- Accessibility and focus --- */
-a:focus {
-    outline: 3px dashed #FFFFFF;
-    outline-offset: 3px;
-}
-
 /* --- Skip link --- */
 .skip-to-content {
     position: absolute;
@@ -107,11 +107,12 @@ a:focus {
     border-radius: 5px;
     border: 3px dashed #FFFFFF;
 }
+
 .skip-to-content:focus {
     top: 0;
 }
 
-/* Responsive Design */
+/* --- Responsive Design --- */
 @media (max-width: 768px) {
     .container {
         width: 90%;
