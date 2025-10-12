@@ -35,7 +35,7 @@ document.write('</a>');
 document.write('<a href="https://yattatachi.com/author/literalgrill">'); 
 document.write('<img src="/Yatta-Tachi-88x31-Banner.png" alt="Yatta Tachi">'); 
 document.write('</a>'); 
-document.write('<p><img src="/xtape.png" width="120" height="30" alt=""></p>'); 
+document.write('<p><img src="/stitch.png" width="120" height="30" alt=""></p>'); 
 document.write('<font size="+1"><b><i>I Also Love</i></b></font>'); 
 document.write('<br>'); 
 document.write('<br>'); 
